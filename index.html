@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            .print_hide {
+                display: none !important;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .ticket_head {
+                background-color: #EF3A1A;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .pessenger_copy_logo {
+                margin-left: 10px;
+            }
+
+            .logo {
+                padding-top: 8px;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Inter', sans-serif;
+            }
+
+            table {
+                page-break-after: auto
+            }
+
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto
+            }
+
+            td {
+                page-break-inside: avoid;
+                page-break-after: auto
+            }
+
+            thead {
+                display: table-header-group
+            }
+
+            tfoot {
+                display: table-footer-group
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <div style="width:100%; background-color: #f04935;">
+        <div
+            style="display: flex; justify-content: space-between; color: white; padding-left: 10px; padding-right: 10px;">
+            <p style="font-size: 20px; font-weight: 600;">Company Logo</p>
+            <!-- <a href="#" style="font-size: 20px; font-weight: 600; text-align: center; margin-top: 10px;"><img src="" style="height: 20px; width: 20px;" alt="">Company Logo</a> -->
+            <p style="font-size: 20px; font-weight: 600;">Company Logo</p>
+            <div>
+                <p style="font-size: 14px; font-weight: 600;">printed by: Md karim</p>
+                <p style="font-size: 14px; font-weight: 600; margin-top: 5px;">21 April 2022 03:30 PM</p>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 10px;">
+
+
+        <!-- 2nd part -->
+
+        <div
+            style="display: flex; justify-content: space-between; color: black; padding-left: 10px; padding-right: 10px;">
+            <div>
+                <p style="color: rgb(58, 51, 51);">Trip : <span style="color: black; font-weight: 600;">Trip Code</span>
+                </p>
+                <p style="color: rgb(58, 51, 51);">Route : <span
+                        style="color: black; font-weight: 600;">Dhaka-Cumilla-Chittagong</span></p>
+                <p style="color: rgb(58, 51, 51);">Date : <span style="color: black; font-weight: 600;">18 May
+                        2022</span></p>
+            </div>
+
+            <div>
+                <p style="color: rgb(58, 51, 51);">Coach : <span style="color: black; font-weight: 600;">Trip
+                        Code</span></p>
+                <p style="color: rgb(58, 51, 51);">Challan Serial : <span
+                        style="color: black; font-weight: 600;">Dhaka-Cumilla-Chittagong</span></p>
+                <p style="color: rgb(58, 51, 51);">Bus Type : <span style="color: black; font-weight: 600;">18 May
+                        2022</span></p>
+            </div>
+        </div>
+
+        <!-- 3rd part -->
+        <div style="border: 2px solid #C4C4C4; width: 100%; text-align: center;">
+            <div style="display:flex; justify-content: space-between;">
+                <div style="width: 33%; border-right: 2px solid #C4C4C4;">
+                    <p style="color: rgb(58, 51, 51);">Supervisor : <span style="color: black; font-weight: 600;">Supervisor
+                            Name</span></p>
+                    <p style="color: rgb(58, 51, 51); font-size: 14px;">Mobile : <span
+                            style="color: black; font-weight: 600; font-size: 14px;">+8801712345678</span></p>
+                </div>
+
+                <div style="width: 33%; border-right: 2px solid #C4C4C4;">
+                    <p style="color: rgb(58, 51, 51);">Driver : <span style="color: black; font-weight: 600;">Driver
+                            Name</span></p>
+                    <p style="color: rgb(58, 51, 51); font-size: 14px;">Mobile : <span
+                            style="color: black; font-weight: 600; font-size: 14px;">+8801712345678</span></p>
+                </div>
+                <div style="width: 33%;">
+                    <p style="color: rgb(58, 51, 51);">Reg.No : <span style="color: black; font-weight: 600;">HA
+                            51-1757</span></p>
+                    <p style="color: rgb(58, 51, 51); font-size: 14px;">Helper Name : <span
+                            style="color: black; font-weight: 600; font-size: 14px;">Helper Name</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!--1st table start -->
+
+        <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-top: 10px;">
+            <tr
+                style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500; background-color: rgb(219, 219, 219); margin-top: 20px; padding: 0 0 10px 10px; text-align: center;">
+                <td colspan="8"
+                    style="border: 1px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px; padding-left: 10px; font-weight: 600; font-size: 20px;">
+                    Ticket Details
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 600;">
+                <td colspan="2" style="border-right: 2px solid #C4C4C4; text-align: center; padding: 0 2px;">
+                    Seat
+                </td>
+
+                <td colspan="1" style="border-right: 2px solid #C4C4C4; text-align: center;">
+                    PNR Reserved (R)
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center;">
+                    <table width=100%>
+                        <th style="text-align: center; border-bottom: 2px solid #C4C4C4;" colspan="3">
+                            Passenger info
+                        </th>
+                        <tr>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">Name</td>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">Sex</td>
+                            <td style="width: 33%;">Mobile</td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td style="border-right: 2px solid #C4C4C4; text-align: center;">
+                    Boarding
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center;">
+                    Destination
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding: 0 2px;">
+                    Discount
+                </td>
+                <td colspan="2" style="border-right: 2px solid #C4C4C4; text-align: center; padding: 0 2px;">
+                    Total Fare
+                </td>
+
+
+
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    B1,B2,B3,B4,B5,B6,B7,B8,B9,B10
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    69AEDHGFUYRFJHE2F
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">Passenger</td>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">M</td>
+                            <td style="width: 33%;">0173.......</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Kamalapur Bus p..
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Brahmanbaria
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    B1
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    69AEDHGFUYRFJHE2F
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">Passenger</td>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">M</td>
+                            <td style="width: 33%;">0173.......</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Kamalapur Bus p..
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Brahmanbaria
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    B1
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    69AEDHGFUYRFJHE2F
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    <table width="100%">
+                        <tr>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">Passenger</td>
+                            <td style="border-right: 2px solid #C4C4C4; width: 33%;">M</td>
+                            <td style="width: 33%;">0173.......</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Kamalapur Bus p..
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Brahmanbaria
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="8"
+                    style="border-right: 2px solid #C4C4C4; text-align: left; padding-top:10px; padding-bottom:10px; padding-left: 10px; font-weight: 600; font-size: 20px;">
+                    Available Seats = 9999 Seats
+                </td>
+            </tr>
+        </table>
+
+        <!-- 2nd table start -->
+
+        <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-top: 10px;">
+            <tr
+                style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500; background-color: rgb(219, 219, 219); margin-top: 20px; padding: 0 0 10px 10px; text-align: center;">
+                <td colspan="10"
+                    style="border: 1px solid transparent; text-align: center; padding-top:10px; padding-bottom:10px; padding-left: 10px; font-weight: 600; font-size: 20px;">
+                    Summery Report
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 600;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Boarding Counter
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Issued By
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Issued Counter
+                </td>
+
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Seats
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Total Fare
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Discount
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Commission
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Total Amount
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Thakurgaoun
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counterman Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counter Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    40
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1200
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Thakurgaoun
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counterman Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counter Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    40
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1200
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Thakurgaoun
+                </td>
+
+                <td colspan="1"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counterman Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Counter Name
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    40
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1200
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+            <tr style="border: 2px solid #C4C4C4; font-size: 12px; font-weight: 500;">
+
+                <td colspan="4"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    Total
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    40
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1200
+                </td>
+                <td style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    00
+                </td>
+                <td colspan="2"
+                    style="border-right: 2px solid #C4C4C4; text-align: center; padding-top:10px; padding-bottom:10px;">
+                    1250
+                </td>
+            </tr>
+        </table>
+
+        <!-- signature part -->
+
+        <div style="margin-top:10px ; border: 2px solid #C4C4C4; width: 100%;">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-top:100px; padding-left: 10px; padding-right: 10px;">
+                <!-- 1st sign -->
+                <div style="width: 25%; ">
+                    <div style="border-top: 2px solid black; width: 50%;"> </div>
+                    <p style="margin-top: 5px; color:black">Signature</p>
+                    <p style="margin-top: 5px; color:black">(Counter Master)</p>
+                </div>
+
+                <!-- 2nd sign -->
+                <div style="width: 25%; ">
+                    <div style="border-top: 2px solid black; width: 50%;"> </div>
+                    <p style="margin-top: 5px; color:black">Signature</p>
+                    <p style="margin-top: 5px; color:black">(Guide)</p>
+                </div>
+
+                <!-- 3rd sign -->
+                <div style="width: 25%; ">
+                    <div style="border-top: 2px solid black; width: 50%;"> </div>
+                    <p style="margin-top: 5px; color:black">Signature</p>
+                    <p style="margin-top: 5px; color:black">(Checker 1)</p>
+                </div>
+
+                <!-- 4th sign -->
+                <div style="width: 25%; ">
+                    <div style="border-top: 2px solid black; width: 50%;"> </div>
+                    <p style="margin-top: 5px; color:black">Signature</p>
+                    <p style="margin-top: 5px; color:black">(Checker 2)</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div style="width:100%; background-color: #f04935;">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; color: white; padding-left: 10px; padding-right: 10px;">
+                <p style="font-size: 14px; font-weight: 400; display: flex; column-gap: 10px; justify-content: center; align-items: center;">Powered by: <span><img src="./assets/logo-white.png" style="width: 40px; height: 20px;" alt=""></span></p>
+                
+                <div>
+                    <a href="https://jatri.co/" style="font-size: 14px; font-weight: 600; color: white; text-decoration: none;">www.Jatri.co</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
